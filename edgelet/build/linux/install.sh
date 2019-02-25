@@ -94,9 +94,7 @@ sudo apt-get install -y \
     libcurl4-openssl-dev \
     debhelper \
     dh-systemd \
-    valgrind && \
-sudo apt-get remove --yes libssl-dev && \
-sudo apt-get install --yes --target-release xenial-updates libssl-dev
+    valgrind libssl-dev
 
 if [[ -n "$ARM_PACKAGE" ]]; then
     # armhf cross tools for packaging
